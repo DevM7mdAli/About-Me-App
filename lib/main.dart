@@ -18,35 +18,29 @@ class MyApp extends StatelessWidget{
         toolbarHeight: 110,
       ),
       
-      body: SafeArea(
+      body: const SafeArea(
         child: Column(
-          //* mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //* verticalDirection: VerticalDirection.up, // reverse starting
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-            color: Colors.blue,
-            height: 150,
-            width: 120,
-            child: const Text("container 1"),
+          CircleAvatar(
+            radius: 50,
+          backgroundImage:  NetworkImage("https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"),
           ),
-          const SizedBox(
-            height: 30,
+
+          Text(
+          "Camera Man",
+          style: TextStyle(
+            fontSize: 36,
+            fontWeight: FontWeight.bold,
+            fontFamily: "Anta",
+            color: Colors.deepOrange,
+            ),
           ),
-            Container(
-            height: 100 ,
-            width: 140,
-            color: Colors.red,
-            child: const Text("Container 2"),
+
+          Text("Like i Saud",
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w500
           ),
-            Container(
-            height: 140 ,
-            width: 120,
-            color: Colors.indigo,
-            child: const Text("Container 3"),
-          ),
-            Container(//just for shape
-            width: double.infinity, //! making invesible full width
           ),
         ],),
       ),
