@@ -10,47 +10,26 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     const String hello = "You Me I";
-    return SafeArea(
-      child: Scaffold(
-      backgroundColor: Colors.amber ,
-      //! nav bar part
+    const String bye = "He she it Bye";
+    return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
-        title: const Center(child: Text("Welcome to the"
+        title: const Text(hello),
+        backgroundColor: Colors.amber,
+        toolbarHeight: 110,
+      ),
+      
+      body: SafeArea(
+        child:  Container(
+          color: Colors.blue,
+          height: 150,
+          width: 150,
+          margin: const EdgeInsets.symmetric(vertical: 100, horizontal: 120),
+          padding: const EdgeInsets.all(10),
+          child: const Center(child: Text(bye)),
         ),
-        ),
       ),
-
-      //* main content Area
-      body: const Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-          child: Column(
-            children: [
-              Text(hello),
-              Text(hello),
-              Text(hello),
-              Text(hello),
-              Text(hello),
-              Text(hello),
-              Text(hello),
-              Column(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.all(11.0),
-                    child: Image(image: NetworkImage("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"),
-                    ),
-                  ),
-                ],
-              )
-            ],
-          ),
-          ),
-        ],
-      ),
-      ),
-      );
+      
+    );
   }
 }
 
