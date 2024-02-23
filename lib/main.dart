@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const String hello = "You Me I";
+    const String hello = "Contact Me";
     return Scaffold(
       backgroundColor: Colors.teal,
       appBar: AppBar(
-        title: const Text(hello),
+        title: const Center(child: Text(hello)),
         backgroundColor: Colors.amber,
 
       ),
@@ -28,10 +28,10 @@ class MyApp extends StatelessWidget {
             CircleAvatar(
               radius: 50,
               backgroundImage: NetworkImage(
-                  "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"),
+                  "https://avatars.githubusercontent.com/u/74423891?v=4"),
             ),
             Text(
-              "Camera Man",
+              "Mohammed Alajmi",
               style: TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Text(
-              "Like i Saud",
+              "Programmer",
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             ),
 
@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
                 ),
 
                 title: Text(
-                  "CameraMan@gmailDead.com",
+                  "Mohammed-Alajmi@outlook.sa",
                   style: TextStyle(
                   fontFamily: "Anta",
                   fontSize: 15,
